@@ -14,3 +14,14 @@
 .backface-hidden {
   backface-visibility: hidden;
 }
+
+@keyframes explode {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(3); opacity: 0; }
+}
+.emoji-explosion {
+  animation: explode 0.6s ease-out forwards;
+  position: absolute;
+  font-size: 2rem;
+  pointer-events: none;
+}
